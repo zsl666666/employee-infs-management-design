@@ -22,6 +22,7 @@ class Login extends Component {
     const { type } = this.state;
 
     if (!err) {
+      console.log('点击登录提交信息', values, this.props.dispatch)
       const { dispatch } = this.props;
       dispatch({
         type: 'login/login',
@@ -206,7 +207,7 @@ class Login extends Component {
           <Submit loading={submitting}>
             <FormattedMessage id="user-login.login.login" />
           </Submit>
-          <div className={styles.other}>
+          {/* <div className={styles.other}>
             <FormattedMessage id="user-login.login.sign-in-with" />
             <Icon type="alipay-circle" className={styles.icon} theme="outlined" />
             <Icon type="taobao-circle" className={styles.icon} theme="outlined" />
@@ -214,7 +215,7 @@ class Login extends Component {
             <Link className={styles.register} to="/user/register">
               <FormattedMessage id="user-login.login.signup" />
             </Link>
-          </div>
+          </div> */}
         </LoginComponents>
       </div>
     );

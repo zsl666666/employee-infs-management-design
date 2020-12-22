@@ -99,13 +99,13 @@ export default {
           routes: [
             {
               path: '/',
-              redirect: '/welcome',
+              redirect: '/dashboard',
             },
             {
-              path: '/welcome',
-              name: 'welcome',
+              path: '/dashboard',
+              name: 'home',
               icon: 'smile',
-              component: './Welcome',
+              component: './Dashboard',
             },
             {
               path: '/admin',
@@ -118,10 +118,16 @@ export default {
                   path: '/admin/sub-page',
                   name: 'sub-page',
                   icon: 'smile',
-                  component: './Welcome',
+                  component: './Dashboard',
                   authority: ['admin'],
                 },
               ],
+            },
+            {
+              path: '/hahahah',
+              name: 'hahah',
+              icon: 'smile',
+              component: './Devst',
             },
             {
               component: './404',

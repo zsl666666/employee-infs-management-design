@@ -13,7 +13,7 @@ const CodePreview = ({ children }) => (
 );
 
 export default () => (
-  <PageHeaderWrapper>
+  <div>
     <Card>
       <Alert
         message="umi ui 现已发布，点击右下角 umi 图标即可使用"
@@ -50,7 +50,7 @@ export default () => (
       </Typography.Text>
       <CodePreview> npm run fetch:blocks</CodePreview>
     </Card>
-    <p
+    {/* <p
       style={{
         textAlign: 'center',
         marginTop: 24,
@@ -61,6 +61,6 @@ export default () => (
         use block
       </a>
       。
-    </p>
-  </PageHeaderWrapper>
+    </p> */}
+  </div>
 );
